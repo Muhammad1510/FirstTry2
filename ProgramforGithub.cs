@@ -20,13 +20,25 @@ namespace SampleProgram
             int sum = num1 + num2;
             Console.WriteLine($"The sum of {num1} and {num2} is {sum}.");
 
-            // Calculate product (new feature)
+            // Calculate product
             int product = num1 * num2;
             Console.WriteLine($"The product of {num1} and {num2} is {product}.");
 
-            Console.WriteLine("Press any key to exit...");
-            Console.ReadKey();
+            // Calculate difference (new feature)
+            int difference = num1 - num2;
+            Console.WriteLine($"The difference between {num1} and {num2} is {difference}.");
+
+            // Exit confirmation (new feature)
+            Console.Write("Do you want to exit? (yes/no): ");
+            string response = Console.ReadLine().ToLower();
+            if (response == "no")
+            {
+                Console.WriteLine("Restart the program to perform more calculations!");
+            }
+            else
+            {
+                Console.WriteLine("Thank you for using the Enhanced Calculator. Goodbye!");
+            }
         }
     }
-}
 }
