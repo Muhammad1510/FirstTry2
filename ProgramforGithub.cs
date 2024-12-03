@@ -6,7 +6,7 @@ namespace SampleProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the Sum Calculator!");
+            Console.WriteLine("Welcome to the Enhanced Calculator!");
 
             // Input first number
             Console.Write("Enter the first number: ");
@@ -18,12 +18,15 @@ namespace SampleProgram
 
             // Calculate sum
             int sum = num1 + num2;
-
-            // Display result
             Console.WriteLine($"The sum of {num1} and {num2} is {sum}.");
+
+            // Calculate product (new feature)
+            int product = num1 * num2;
+            Console.WriteLine($"The product of {num1} and {num2} is {product}.");
 
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }
     }
+}
 }
